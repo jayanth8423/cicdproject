@@ -5,12 +5,11 @@ import Cart from "./Cart";
 import ForgotPassword from "./ForgotPassword";
 import CustomerHome from "./CustomerHome";
 
-
 function App() {
   return (
-    <Router>
+    <Router basename="/grosery">
       <Routes>
-        <Route path="/CustomerHome" element={<CustomerHome/>}/>
+        <Route path="/CustomerHome" element={<CustomerHome />} />
         <Route path="/AdminDashboard" element={<AdminDashboard />} />
         <Route path="/CustomerDashboard" element={<CustomerDashboard />} />
         <Route path="/cart" element={<Cart />} />
