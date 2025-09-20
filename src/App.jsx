@@ -10,16 +10,17 @@ function App() {
     <Router basename="/grossery-app">
       <Routes>
         {/* Default route → redirect to CustomerHome */}
-        <Route path="/" element={<Navigate to="/CustomerHome" replace />} />
+        <Route path="/" element={<Navigate to="/customerhome" replace />} />
 
-        <Route path="/CustomerHome" element={<CustomerHome />} />
-        <Route path="/AdminDashboard" element={<AdminDashboard />} />
-        <Route path="/CustomerDashboard" element={<CustomerDashboard />} />
+        {/* Main routes */}
+        <Route path="/customerhome" element={<CustomerHome />} />
+        <Route path="/admindashboard" element={<AdminDashboard />} />
+        <Route path="/customerdashboard" element={<CustomerDashboard />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/forgetpass" element={<ForgotPassword />} />
 
-        {/* Catch-all route for unknown URLs */}
-        <Route path="*" element={<Navigate to="/CustomerHome" replace />} />
+        {/* Catch-all for unknown URLs */}
+        <Route path="*" element={<Navigate to="/customerhome" replace />} />
       </Routes>
     </Router>
   );
