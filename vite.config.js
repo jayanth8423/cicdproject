@@ -1,10 +1,8 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-  base: './',  // 🔥 VERY IMPORTANT for subdirectory deployment
-  build: {
-    outDir: 'dist', // optional; 'dist' is the default
-  },
-})
+  base: '/grossery-app/',
+}
+)
