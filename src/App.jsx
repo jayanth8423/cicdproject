@@ -7,7 +7,7 @@ import CustomerHome from "./CustomerHome";
 
 function App() {
   return (
-    <Router basename="/grosery">
+    <Router basename="/gro">
       <Routes>
         {/* Default route → redirect to CustomerHome */}
         <Route path="/" element={<Navigate to="/CustomerHome" replace />} />
