@@ -23,7 +23,7 @@ export default function Signup() {
             return;
         }
 
-        axios.post("http://localhost:8080/api/signup", {
+        axios.post("http://localhost:8081/api/signup", {
             username,
             email,
             password,
