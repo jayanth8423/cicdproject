@@ -8,7 +8,7 @@ const AdminDashboard = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch('http://localhost:8080/api/admin/all-users', {
+      const response = await fetch('http://localhost:8081/api/admin/all-users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
